@@ -1,0 +1,81 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: rgb(12, 59, 59);
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.list-wrapper {
+    background-color: white;
+
+    width: 500px;
+    height: 500px;
+    overflow: auto;
+    border-radius: 10px;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-item {
+    display: flex;
+    border-bottom: 1px solid gray;
+    padding: 16px;
+}
+
+.list-item:hover {
+    background-color: #e8e8e8;
+}
+
+.delete {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    opacity: 0%;
+}
+
+.list-item:hover .delete {
+    opacity: 50%;
+}
+
+.img .person {
+    width: 80%;
+    border-radius: 50%;
+}
+
+.text {
+    padding: 0 20px;
+    flex-grow: 1;
+}
+
+h2 {
+    font-size: 23px;
+    font-weight: 50%;
+}
+
+p {
+    font-size: 15px;
+    color: rgb(53, 53, 53);
+}
+
+.delet:hover, .edit:hover {
+    cursor: pointer;
+}
